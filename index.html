@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+            <meta charset="utf-8">
+                <title>Showing elevation along a path</title>
+             
+                    <script src="https://www.google.com/jsapi"></script>
+                    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=geometry,visualization"></script>
+                <script src="http://code.jquery.com/jquery-latest.pack.js" type="text/javascript" ></script>
+                <script src="profile.js" type="text/javascript" ></script>
+    </head>
+    <body>
+        <div><table border="0"><tr><td>
+            <div id="map-canvas" style="height:600px; width:600px;"></div>
+        </td><td>
+            <div style="margin:5px 0 0 25px;">
+                <div style="margin:10px 0;">
+                    <select id="path">
+                        <option value="TraumpfadBleidenbergerAusblicke">Traumpfad Bleidenberger Ausblicke</option>
+                        <option selected="selected" value="TraumpfadHatzenporterLaysteig">Traumpfad Hatzenporter Laysteig</option>
+                        <option value="TraumpfadMonrealerRitterschlag">Traumpfad Monrealer Ritterschlag</option>
+                    </select>
+                </div>
+                <div><input id="heatmap" type="checkbox"/> Heatmap</div>
+                <div><input id="rollercoasterA" type="checkbox"/> Rollercoaster</div>
+                <div><input id="rollercoasterB" type="checkbox"/> Rollercoaster concentric</div>
+                <div><input id="hedgehog" type="checkbox"/> Hedgehog</div>
+                <div><input id="zickzack" type="checkbox"/> Zick Zack</div>
+            </div>
+            <div id="elevation_chart"></div>
+            <div id="infoBox" style="margin:5px 0 0 25px;"></div>
+        </td></tr></table>
+        </div>
+    </body>
+</html>
